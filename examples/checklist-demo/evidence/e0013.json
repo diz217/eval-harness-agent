@@ -1,0 +1,71 @@
+{
+  "evidence_id": "e0013",
+  "tool": "record_finding",
+  "arguments": {
+    "title": "Isolated failures in cluster 6_05 involving 'not say given' neutral sentences misclassified as negative",
+    "kind": "isolated_failure",
+    "group_id": "cluster6_05",
+    "case_ids": [
+      "checklist-sentiment-084566",
+      "checklist-sentiment-084599",
+      "checklist-sentiment-084655",
+      "checklist-sentiment-084682",
+      "checklist-sentiment-084683"
+    ],
+    "evidence_ids": [
+      "e0006"
+    ],
+    "hypothesis": "Cluster 6_05 predominantly contains neutral-labeled sentences with phrases like 'not say given' that the candidate model misclassifies as negative in isolated cases despite overall accuracy improvement.",
+    "missing_evidence": [
+      "More cases and independent confirmation cohort to assess operational impact and prevalence"
+    ]
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "finding_id": "f003",
+    "title": "Isolated failures in cluster 6_05 involving 'not say given' neutral sentences misclassified as negative",
+    "kind": "isolated_failure",
+    "group_id": "cluster6_05",
+    "measured_observations": {
+      "group_id": "cluster6_05",
+      "cases": 1000,
+      "baseline_accuracy": 0.139,
+      "candidate_accuracy": 0.352,
+      "accuracy_delta": 0.213,
+      "correct_to_wrong": 9,
+      "wrong_to_correct": 222,
+      "both_wrong": 639,
+      "expected_label_counts": {
+        "negative": 500,
+        "neutral": 500,
+        "positive": 0
+      },
+      "status": "exploratory",
+      "confirmation": "No independent confirmation cohort was supplied",
+      "uncertainty_flags": [
+        "unmeasured template dependence; adaptive slice selection"
+      ],
+      "descriptive_bootstrap_95": [
+        0.189,
+        0.23902499999999996
+      ],
+      "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+    },
+    "case_ids": [
+      "checklist-sentiment-084566",
+      "checklist-sentiment-084599",
+      "checklist-sentiment-084655",
+      "checklist-sentiment-084682",
+      "checklist-sentiment-084683"
+    ],
+    "evidence_ids": [
+      "e0006"
+    ],
+    "agent_hypothesis_not_verified_cause": "Cluster 6_05 predominantly contains neutral-labeled sentences with phrases like 'not say given' that the candidate model misclassifies as negative in isolated cases despite overall accuracy improvement.",
+    "missing_evidence": [
+      "More cases and independent confirmation cohort to assess operational impact and prevalence"
+    ],
+    "confirmation_status": "unconfirmed",
+    "business_severity": "not established"
+  }
+}

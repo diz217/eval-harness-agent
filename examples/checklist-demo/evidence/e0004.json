@@ -1,0 +1,67 @@
+{
+  "evidence_id": "e0004",
+  "tool": "inspect_cases",
+  "arguments": {
+    "group_id": "prescribed_short-inputs",
+    "outcome": "regressed",
+    "limit": 5
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "group_id": "prescribed_short-inputs",
+    "matching_cases": 2,
+    "sampling": "first cases in input order",
+    "cases": [
+      {
+        "case_id": "checklist-sentiment-000031",
+        "text": "admired",
+        "expected_label": "positive",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "positive",
+          "probabilities": {
+            "negative": 7.1e-05,
+            "neutral": 0.0,
+            "positive": 0.999929
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.982031,
+            "neutral": 0.0,
+            "positive": 0.017969
+          }
+        },
+        "accuracy_delta": -1.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      },
+      {
+        "case_id": "checklist-sentiment-000058",
+        "text": "average",
+        "expected_label": "negative",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.998269,
+            "neutral": 0.0,
+            "positive": 0.001731
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "positive",
+          "probabilities": {
+            "negative": 0.040079,
+            "neutral": 0.0,
+            "positive": 0.959921
+          }
+        },
+        "accuracy_delta": -1.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      }
+    ]
+  }
+}

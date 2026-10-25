@@ -1,0 +1,52 @@
+{
+  "evidence_id": "e0010",
+  "tool": "compare_slice",
+  "arguments": {
+    "name": "proposed_check_not_neg_to_neutral_partial",
+    "filter": {
+      "expected_label": "neutral",
+      "contains_all": [
+        "not"
+      ],
+      "min_words": 0,
+      "max_words": 1000
+    }
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "name": "proposed_check_not_neg_to_neutral_partial",
+    "filter": {
+      "expected_label": "neutral",
+      "contains_all": [
+        "not"
+      ],
+      "min_words": 0,
+      "max_words": 1000
+    },
+    "metrics": {
+      "group_id": "slice_907cdad3a9",
+      "cases": 464,
+      "baseline_accuracy": 0.017241379310344827,
+      "candidate_accuracy": 0.1271551724137931,
+      "accuracy_delta": 0.10991379310344827,
+      "correct_to_wrong": 8,
+      "wrong_to_correct": 59,
+      "both_wrong": 397,
+      "expected_label_counts": {
+        "negative": 0,
+        "neutral": 464,
+        "positive": 0
+      },
+      "status": "exploratory",
+      "confirmation": "No independent confirmation cohort was supplied",
+      "uncertainty_flags": [
+        "unmeasured template dependence; adaptive slice selection"
+      ],
+      "descriptive_bootstrap_95": [
+        0.07974137931034483,
+        0.14224137931034483
+      ],
+      "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "evidence_id": "e0016",
+  "tool": "finish_report",
+  "arguments": {
+    "summary": "Model B shows overall improved accuracy over A with approximately 8.2% gain. However, specific weaknesses exist. The prescribed short-inputs check reveals slight degradation on single-word sentiment inputs with a 2.4% accuracy drop and some regressions misclassifying positive or negative words, potentially indicating weaker lexical sensitivity. The negation check passes with a strong positive accuracy delta, showing no regression on inputs containing 'not'. Unsupervised clustering identified several lexical input groups; cluster 6_00 shows no degradation despite many error disagreements, indicating harmless lexical variability without regression. Cluster 6_05, characterized by phrases like 'not say given' in neutral sentences, has isolated failures where model B misclassifies them as negative, despite showing overall accuracy improvement. Coverage checks confirm these clusters and the prescribed slices do not overlap, indicating the playbook may miss emerging failure modes related to complex negations or polite hedging phrases. A proposed new check targeting neutral sentences with negation and hedging phrases such as 'not say' is supported by isolated failures and should be further validated on expanded data.",
+    "limitations": [
+      "Labels are author-specified expectations and not independently verified",
+      "No independent confirmation cohort was supplied",
+      "Adaptive slice selection and template dependence limit confirmatory conclusions",
+      "Small sample sizes in some prescribed and lexical slices limit robustness",
+      "Business impact and severity of errors were not annotated",
+      "Clustering is lexical and does not necessarily imply causal failure modes"
+    ],
+    "recommendation": "scientist_review"
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "status": "completed_exploratory_analysis",
+    "report": "report.md",
+    "findings": 3,
+    "draft_proposals": 0
+  }
+}

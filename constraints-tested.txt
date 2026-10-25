@@ -1,0 +1,8 @@
+# Versions used in the Windows live demonstration (Python 3.11).
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.2.2
+jsonschema==4.19.2
+requests==2.31.0
+truststore==0.8.0
+threadpoolctl==3.7.0

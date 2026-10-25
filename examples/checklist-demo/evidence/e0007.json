@@ -1,0 +1,39 @@
+{
+  "evidence_id": "e0007",
+  "tool": "check_coverage",
+  "arguments": {
+    "group_id": "cluster6_05"
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "group_id": "cluster6_05",
+    "cases": 1000,
+    "covered_cases": 0,
+    "uncovered": {
+      "group_id": "uncovered_cluster6_05",
+      "cases": 1000,
+      "baseline_accuracy": 0.139,
+      "candidate_accuracy": 0.352,
+      "accuracy_delta": 0.213,
+      "correct_to_wrong": 9,
+      "wrong_to_correct": 222,
+      "both_wrong": 639,
+      "expected_label_counts": {
+        "negative": 500,
+        "neutral": 500,
+        "positive": 0
+      },
+      "status": "exploratory",
+      "confirmation": "No independent confirmation cohort was supplied",
+      "uncertainty_flags": [
+        "unmeasured template dependence; adaptive slice selection"
+      ],
+      "descriptive_bootstrap_95": [
+        0.189,
+        0.23902499999999996
+      ],
+      "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+    },
+    "interpretation": "Input-slice coverage only; a case outside these slices is not automatically a meaningful coverage defect"
+  }
+}

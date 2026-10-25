@@ -1,0 +1,35 @@
+{
+  "evidence_id": "e0009",
+  "tool": "compare_slice",
+  "arguments": {
+    "name": "proposed_check_not_neg_to_neutral_without_given",
+    "filter": {
+      "expected_label": "neutral",
+      "contains_all": [
+        "not",
+        "say"
+      ],
+      "min_words": 0,
+      "max_words": 1000
+    }
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "name": "proposed_check_not_neg_to_neutral_without_given",
+    "filter": {
+      "expected_label": "neutral",
+      "contains_all": [
+        "not",
+        "say"
+      ],
+      "min_words": 0,
+      "max_words": 1000
+    },
+    "metrics": {
+      "group_id": "slice_5571f948aa",
+      "cases": 0,
+      "status": "inconclusive",
+      "reason": "empty subset"
+    }
+  }
+}

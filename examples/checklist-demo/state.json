@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "provider": "openai_responses",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "model_turns": 17,
+  "live_api_calls": 17,
+  "usage_tokens_recorded": 97372,
+  "elapsed_seconds": 23.172,
+  "limits": {
+    "max_calls": 24,
+    "token_budget": 200000,
+    "max_seconds": 600
+  },
+  "report": "report.md"
+}

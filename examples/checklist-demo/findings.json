@@ -1,0 +1,140 @@
+[
+  {
+    "finding_id": "f001",
+    "title": "Degradation on short single-word sentiment inputs",
+    "kind": "exploratory_regression",
+    "group_id": "prescribed_short-inputs",
+    "measured_observations": {
+      "group_id": "prescribed_short-inputs",
+      "cases": 82,
+      "baseline_accuracy": 0.8414634146341463,
+      "candidate_accuracy": 0.8170731707317073,
+      "accuracy_delta": -0.024390243902439025,
+      "correct_to_wrong": 2,
+      "wrong_to_correct": 0,
+      "both_wrong": 13,
+      "expected_label_counts": {
+        "negative": 35,
+        "neutral": 13,
+        "positive": 34
+      },
+      "status": "exploratory",
+      "confirmation": "No independent confirmation cohort was supplied",
+      "uncertainty_flags": [
+        "few discordant pairs",
+        "unmeasured template dependence; adaptive slice selection"
+      ],
+      "descriptive_bootstrap_95": [
+        -0.06097560975609756,
+        0.0
+      ],
+      "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+    },
+    "case_ids": [
+      "checklist-sentiment-000031",
+      "checklist-sentiment-000058"
+    ],
+    "evidence_ids": [
+      "e0002",
+      "e0004"
+    ],
+    "agent_hypothesis_not_verified_cause": "The candidate model shows degradation for very short input texts (single words) in sentiment classification, misclassifying positive and negative single-word examples.",
+    "missing_evidence": [
+      "More cases needed to confirm severity and prevalence outside the provided examples"
+    ],
+    "confirmation_status": "unconfirmed",
+    "business_severity": "not established"
+  },
+  {
+    "finding_id": "f002",
+    "title": "No group-level regression detected in cluster 6_00 despite many both-wrong cases",
+    "kind": "no_detected_group_regression",
+    "group_id": "cluster6_00",
+    "measured_observations": {
+      "group_id": "cluster6_00",
+      "cases": 2387,
+      "baseline_accuracy": 0.5069124423963134,
+      "candidate_accuracy": 0.5609551738583997,
+      "accuracy_delta": 0.0540427314620863,
+      "correct_to_wrong": 41,
+      "wrong_to_correct": 170,
+      "both_wrong": 1007,
+      "expected_label_counts": {
+        "negative": 915,
+        "neutral": 1128,
+        "positive": 344
+      },
+      "status": "exploratory",
+      "confirmation": "No independent confirmation cohort was supplied",
+      "uncertainty_flags": [
+        "unmeasured template dependence; adaptive slice selection"
+      ],
+      "descriptive_bootstrap_95": [
+        0.04189359028068706,
+        0.06535400083787181
+      ],
+      "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+    },
+    "case_ids": [
+      "checklist-sentiment-000069",
+      "checklist-sentiment-000070",
+      "checklist-sentiment-000071"
+    ],
+    "evidence_ids": [
+      "e0005"
+    ],
+    "agent_hypothesis_not_verified_cause": "Cluster 6_00 has many neutral-labeled cases with different errors but shows a positive accuracy delta, indicating no group-level degradation in model B.",
+    "missing_evidence": [
+      "Further inspection of both-wrong cases for potential disagreements on expected labels"
+    ],
+    "confirmation_status": "unconfirmed",
+    "business_severity": "not established"
+  },
+  {
+    "finding_id": "f003",
+    "title": "Isolated failures in cluster 6_05 involving 'not say given' neutral sentences misclassified as negative",
+    "kind": "isolated_failure",
+    "group_id": "cluster6_05",
+    "measured_observations": {
+      "group_id": "cluster6_05",
+      "cases": 1000,
+      "baseline_accuracy": 0.139,
+      "candidate_accuracy": 0.352,
+      "accuracy_delta": 0.213,
+      "correct_to_wrong": 9,
+      "wrong_to_correct": 222,
+      "both_wrong": 639,
+      "expected_label_counts": {
+        "negative": 500,
+        "neutral": 500,
+        "positive": 0
+      },
+      "status": "exploratory",
+      "confirmation": "No independent confirmation cohort was supplied",
+      "uncertainty_flags": [
+        "unmeasured template dependence; adaptive slice selection"
+      ],
+      "descriptive_bootstrap_95": [
+        0.189,
+        0.23902499999999996
+      ],
+      "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+    },
+    "case_ids": [
+      "checklist-sentiment-084566",
+      "checklist-sentiment-084599",
+      "checklist-sentiment-084655",
+      "checklist-sentiment-084682",
+      "checklist-sentiment-084683"
+    ],
+    "evidence_ids": [
+      "e0006"
+    ],
+    "agent_hypothesis_not_verified_cause": "Cluster 6_05 predominantly contains neutral-labeled sentences with phrases like 'not say given' that the candidate model misclassifies as negative in isolated cases despite overall accuracy improvement.",
+    "missing_evidence": [
+      "More cases and independent confirmation cohort to assess operational impact and prevalence"
+    ],
+    "confirmation_status": "unconfirmed",
+    "business_severity": "not established"
+  }
+]

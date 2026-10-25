@@ -1,0 +1,88 @@
+{
+  "evidence_id": "e0002",
+  "tool": "run_prescribed_checks",
+  "arguments": {},
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "checks": [
+      {
+        "check": {
+          "id": "short-inputs",
+          "hypothesis": "Single-word sentiment examples should remain stable.",
+          "filter": {
+            "expected_label": "any",
+            "contains_all": [],
+            "min_words": 0,
+            "max_words": 1
+          }
+        },
+        "metrics": {
+          "group_id": "prescribed_short-inputs",
+          "cases": 82,
+          "baseline_accuracy": 0.8414634146341463,
+          "candidate_accuracy": 0.8170731707317073,
+          "accuracy_delta": -0.024390243902439025,
+          "correct_to_wrong": 2,
+          "wrong_to_correct": 0,
+          "both_wrong": 13,
+          "expected_label_counts": {
+            "negative": 35,
+            "neutral": 13,
+            "positive": 34
+          },
+          "status": "exploratory",
+          "confirmation": "No independent confirmation cohort was supplied",
+          "uncertainty_flags": [
+            "few discordant pairs",
+            "unmeasured template dependence; adaptive slice selection"
+          ],
+          "descriptive_bootstrap_95": [
+            -0.06097560975609756,
+            0.0
+          ],
+          "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+        }
+      },
+      {
+        "check": {
+          "id": "negation",
+          "hypothesis": "Inputs containing not should not degrade as a group.",
+          "filter": {
+            "expected_label": "any",
+            "contains_all": [
+              "not"
+            ],
+            "min_words": 0,
+            "max_words": 1000
+          }
+        },
+        "metrics": {
+          "group_id": "prescribed_negation",
+          "cases": 907,
+          "baseline_accuracy": 0.48511576626240355,
+          "candidate_accuracy": 0.5534729878721059,
+          "accuracy_delta": 0.06835722160970231,
+          "correct_to_wrong": 8,
+          "wrong_to_correct": 70,
+          "both_wrong": 397,
+          "expected_label_counts": {
+            "negative": 443,
+            "neutral": 464,
+            "positive": 0
+          },
+          "status": "exploratory",
+          "confirmation": "No independent confirmation cohort was supplied",
+          "uncertainty_flags": [
+            "unmeasured template dependence; adaptive slice selection"
+          ],
+          "descriptive_bootstrap_95": [
+            0.04961411245865491,
+            0.08712789415656007
+          ],
+          "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+        }
+      }
+    ],
+    "meaning": "These checks do not exhaust possible failures"
+  }
+}

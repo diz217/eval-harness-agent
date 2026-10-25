@@ -1,0 +1,207 @@
+{
+  "evidence_id": "e0003",
+  "tool": "cluster_cases",
+  "arguments": {
+    "n_clusters": 6
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "method": "TF-IDF (word unigrams/bigrams) + KMeans over all input texts",
+    "selection": "No outcome or source-test label used in clustering",
+    "clusters": [
+      {
+        "top_terms": [
+          "do",
+          "do think",
+          "think",
+          "yes",
+          "no",
+          "think that",
+          "is",
+          "think this"
+        ],
+        "metrics": {
+          "group_id": "cluster6_04",
+          "cases": 1768,
+          "baseline_accuracy": 0.34558823529411764,
+          "candidate_accuracy": 0.36990950226244346,
+          "accuracy_delta": 0.024321266968325792,
+          "correct_to_wrong": 19,
+          "wrong_to_correct": 62,
+          "both_wrong": 1095,
+          "expected_label_counts": {
+            "negative": 431,
+            "neutral": 1156,
+            "positive": 181
+          },
+          "status": "exploratory",
+          "confirmation": "No independent confirmation cohort was supplied",
+          "uncertainty_flags": [
+            "unmeasured template dependence; adaptive slice selection"
+          ]
+        }
+      },
+      {
+        "top_terms": [
+          "this",
+          "that",
+          "is",
+          "an",
+          "not",
+          "was",
+          "is not",
+          "crew"
+        ],
+        "metrics": {
+          "group_id": "cluster6_00",
+          "cases": 2387,
+          "baseline_accuracy": 0.5069124423963134,
+          "candidate_accuracy": 0.5609551738583997,
+          "accuracy_delta": 0.0540427314620863,
+          "correct_to_wrong": 41,
+          "wrong_to_correct": 170,
+          "both_wrong": 1007,
+          "expected_label_counts": {
+            "negative": 915,
+            "neutral": 1128,
+            "positive": 344
+          },
+          "status": "exploratory",
+          "confirmation": "No independent confirmation cohort was supplied",
+          "uncertainty_flags": [
+            "unmeasured template dependence; adaptive slice selection"
+          ]
+        }
+      },
+      {
+        "top_terms": [
+          "this airline",
+          "airline",
+          "it",
+          "to",
+          "used to",
+          "used",
+          "this",
+          "the past"
+        ],
+        "metrics": {
+          "group_id": "cluster6_01",
+          "cases": 510,
+          "baseline_accuracy": 0.803921568627451,
+          "candidate_accuracy": 0.8862745098039215,
+          "accuracy_delta": 0.08235294117647059,
+          "correct_to_wrong": 16,
+          "wrong_to_correct": 58,
+          "both_wrong": 42,
+          "expected_label_counts": {
+            "negative": 269,
+            "neutral": 6,
+            "positive": 235
+          },
+          "status": "exploratory",
+          "confirmation": "No independent confirmation cohort was supplied",
+          "uncertainty_flags": [
+            "unmeasured template dependence; adaptive slice selection"
+          ]
+        }
+      },
+      {
+        "top_terms": [
+          "you",
+          "you are",
+          "think you",
+          "are",
+          "think",
+          "people think",
+          "some people",
+          "some"
+        ],
+        "metrics": {
+          "group_id": "cluster6_03",
+          "cases": 417,
+          "baseline_accuracy": 0.6139088729016786,
+          "candidate_accuracy": 0.7146282973621103,
+          "accuracy_delta": 0.10071942446043165,
+          "correct_to_wrong": 12,
+          "wrong_to_correct": 54,
+          "both_wrong": 107,
+          "expected_label_counts": {
+            "negative": 218,
+            "neutral": 0,
+            "positive": 199
+          },
+          "status": "exploratory",
+          "confirmation": "No independent confirmation cohort was supplied",
+          "uncertainty_flags": [
+            "unmeasured template dependence; adaptive slice selection"
+          ]
+        }
+      },
+      {
+        "top_terms": [
+          "thought",
+          "would",
+          "but",
+          "would be",
+          "be",
+          "but it",
+          "it",
+          "not"
+        ],
+        "metrics": {
+          "group_id": "cluster6_02",
+          "cases": 1000,
+          "baseline_accuracy": 0.496,
+          "candidate_accuracy": 0.611,
+          "accuracy_delta": 0.115,
+          "correct_to_wrong": 5,
+          "wrong_to_correct": 120,
+          "both_wrong": 384,
+          "expected_label_counts": {
+            "negative": 500,
+            "neutral": 500,
+            "positive": 0
+          },
+          "status": "exploratory",
+          "confirmation": "No independent confirmation cohort was supplied",
+          "uncertainty_flags": [
+            "unmeasured template dependence; adaptive slice selection"
+          ]
+        }
+      },
+      {
+        "top_terms": [
+          "that",
+          "given",
+          "say given",
+          "say",
+          "the",
+          "wouldn say",
+          "wouldn",
+          "ve"
+        ],
+        "metrics": {
+          "group_id": "cluster6_05",
+          "cases": 1000,
+          "baseline_accuracy": 0.139,
+          "candidate_accuracy": 0.352,
+          "accuracy_delta": 0.213,
+          "correct_to_wrong": 9,
+          "wrong_to_correct": 222,
+          "both_wrong": 639,
+          "expected_label_counts": {
+            "negative": 500,
+            "neutral": 500,
+            "positive": 0
+          },
+          "status": "exploratory",
+          "confirmation": "No independent confirmation cohort was supplied",
+          "uncertainty_flags": [
+            "unmeasured template dependence; adaptive slice selection"
+          ]
+        }
+      }
+    ],
+    "warning": "Terms describe lexical similarity, not cause; small and isolated failures are retained in the full dataset"
+  }
+}

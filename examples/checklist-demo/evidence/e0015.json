@@ -1,0 +1,20 @@
+{
+  "evidence_id": "e0015",
+  "tool": "check_coverage",
+  "arguments": {
+    "group_id": "prescribed_negation"
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "group_id": "prescribed_negation",
+    "cases": 907,
+    "covered_cases": 907,
+    "uncovered": {
+      "group_id": "uncovered_prescribed_negation",
+      "cases": 0,
+      "status": "inconclusive",
+      "reason": "empty subset"
+    },
+    "interpretation": "Input-slice coverage only; a case outside these slices is not automatically a meaningful coverage defect"
+  }
+}

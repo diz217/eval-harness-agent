@@ -1,0 +1,67 @@
+{
+  "evidence_id": "e0012",
+  "tool": "record_finding",
+  "arguments": {
+    "title": "No group-level regression detected in cluster 6_00 despite many both-wrong cases",
+    "kind": "no_detected_group_regression",
+    "group_id": "cluster6_00",
+    "case_ids": [
+      "checklist-sentiment-000069",
+      "checklist-sentiment-000070",
+      "checklist-sentiment-000071"
+    ],
+    "evidence_ids": [
+      "e0005"
+    ],
+    "hypothesis": "Cluster 6_00 has many neutral-labeled cases with different errors but shows a positive accuracy delta, indicating no group-level degradation in model B.",
+    "missing_evidence": [
+      "Further inspection of both-wrong cases for potential disagreements on expected labels"
+    ]
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "finding_id": "f002",
+    "title": "No group-level regression detected in cluster 6_00 despite many both-wrong cases",
+    "kind": "no_detected_group_regression",
+    "group_id": "cluster6_00",
+    "measured_observations": {
+      "group_id": "cluster6_00",
+      "cases": 2387,
+      "baseline_accuracy": 0.5069124423963134,
+      "candidate_accuracy": 0.5609551738583997,
+      "accuracy_delta": 0.0540427314620863,
+      "correct_to_wrong": 41,
+      "wrong_to_correct": 170,
+      "both_wrong": 1007,
+      "expected_label_counts": {
+        "negative": 915,
+        "neutral": 1128,
+        "positive": 344
+      },
+      "status": "exploratory",
+      "confirmation": "No independent confirmation cohort was supplied",
+      "uncertainty_flags": [
+        "unmeasured template dependence; adaptive slice selection"
+      ],
+      "descriptive_bootstrap_95": [
+        0.04189359028068706,
+        0.06535400083787181
+      ],
+      "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+    },
+    "case_ids": [
+      "checklist-sentiment-000069",
+      "checklist-sentiment-000070",
+      "checklist-sentiment-000071"
+    ],
+    "evidence_ids": [
+      "e0005"
+    ],
+    "agent_hypothesis_not_verified_cause": "Cluster 6_00 has many neutral-labeled cases with different errors but shows a positive accuracy delta, indicating no group-level degradation in model B.",
+    "missing_evidence": [
+      "Further inspection of both-wrong cases for potential disagreements on expected labels"
+    ],
+    "confirmation_status": "unconfirmed",
+    "business_severity": "not established"
+  }
+}

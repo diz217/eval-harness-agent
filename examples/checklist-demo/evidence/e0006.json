@@ -1,0 +1,142 @@
+{
+  "evidence_id": "e0006",
+  "tool": "inspect_cases",
+  "arguments": {
+    "group_id": "cluster6_05",
+    "outcome": "regressed",
+    "limit": 5
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "group_id": "cluster6_05",
+    "matching_cases": 9,
+    "sampling": "first cases in input order",
+    "cases": [
+      {
+        "case_id": "checklist-sentiment-084566",
+        "text": "I can't say, given that I am from Brazil, that the plane is international.",
+        "expected_label": "neutral",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "neutral",
+          "probabilities": {
+            "negative": 0.0,
+            "neutral": 0.660818,
+            "positive": 0.339182
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.864421,
+            "neutral": 0.0,
+            "positive": 0.135579
+          }
+        },
+        "accuracy_delta": -1.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      },
+      {
+        "case_id": "checklist-sentiment-084599",
+        "text": "I wouldn't say, given my history with airplanes, that we see this aircraft.",
+        "expected_label": "neutral",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "neutral",
+          "probabilities": {
+            "negative": 0.02372,
+            "neutral": 0.97628,
+            "positive": 0.0
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.736368,
+            "neutral": 0.0,
+            "positive": 0.263632
+          }
+        },
+        "accuracy_delta": -1.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      },
+      {
+        "case_id": "checklist-sentiment-084655",
+        "text": "I wouldn't say, given all that I've seen over the years, that the customer service was international.",
+        "expected_label": "neutral",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "neutral",
+          "probabilities": {
+            "negative": 0.0,
+            "neutral": 0.965574,
+            "positive": 0.034426
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.883995,
+            "neutral": 0.0,
+            "positive": 0.116005
+          }
+        },
+        "accuracy_delta": -1.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      },
+      {
+        "case_id": "checklist-sentiment-084682",
+        "text": "I wouldn't say, given all that I've seen over the years, that the service is Italian.",
+        "expected_label": "neutral",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "neutral",
+          "probabilities": {
+            "negative": 0.414643,
+            "neutral": 0.585357,
+            "positive": 0.0
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.842799,
+            "neutral": 0.0,
+            "positive": 0.157201
+          }
+        },
+        "accuracy_delta": -1.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      },
+      {
+        "case_id": "checklist-sentiment-084683",
+        "text": "I wouldn't say, given all that I've seen over the years, that we see the airline.",
+        "expected_label": "neutral",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "neutral",
+          "probabilities": {
+            "negative": 0.0,
+            "neutral": 0.965406,
+            "positive": 0.034594
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.869856,
+            "neutral": 0.0,
+            "positive": 0.130144
+          }
+        },
+        "accuracy_delta": -1.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      }
+    ]
+  }
+}

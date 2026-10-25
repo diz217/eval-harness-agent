@@ -1,0 +1,92 @@
+{
+  "evidence_id": "e0005",
+  "tool": "inspect_cases",
+  "arguments": {
+    "group_id": "cluster6_00",
+    "outcome": "both_wrong",
+    "limit": 3
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "group_id": "cluster6_00",
+    "matching_cases": 1007,
+    "sampling": "first cases in input order",
+    "cases": [
+      {
+        "case_id": "checklist-sentiment-000069",
+        "text": "commercial",
+        "expected_label": "neutral",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.909698,
+            "neutral": 0.0,
+            "positive": 0.090302
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "negative",
+          "probabilities": {
+            "negative": 0.926678,
+            "neutral": 0.0,
+            "positive": 0.073322
+          }
+        },
+        "accuracy_delta": 0.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      },
+      {
+        "case_id": "checklist-sentiment-000070",
+        "text": "British",
+        "expected_label": "neutral",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "positive",
+          "probabilities": {
+            "negative": 0.00404,
+            "neutral": 0.0,
+            "positive": 0.99596
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "positive",
+          "probabilities": {
+            "negative": 0.087524,
+            "neutral": 0.0,
+            "positive": 0.912476
+          }
+        },
+        "accuracy_delta": 0.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      },
+      {
+        "case_id": "checklist-sentiment-000071",
+        "text": "private",
+        "expected_label": "neutral",
+        "baseline": {
+          "model_id": "checklist-published-bert",
+          "label": "positive",
+          "probabilities": {
+            "negative": 0.002478,
+            "neutral": 0.0,
+            "positive": 0.997522
+          }
+        },
+        "candidate": {
+          "model_id": "checklist-published-roberta",
+          "label": "positive",
+          "probabilities": {
+            "negative": 0.014032,
+            "neutral": 0.0,
+            "positive": 0.985968
+          }
+        },
+        "accuracy_delta": 0.0,
+        "severity": "not annotated; do not infer business impact from model score"
+      }
+    ]
+  }
+}

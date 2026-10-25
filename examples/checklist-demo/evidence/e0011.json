@@ -1,0 +1,68 @@
+{
+  "evidence_id": "e0011",
+  "tool": "record_finding",
+  "arguments": {
+    "title": "Degradation on short single-word sentiment inputs",
+    "kind": "exploratory_regression",
+    "group_id": "prescribed_short-inputs",
+    "case_ids": [
+      "checklist-sentiment-000031",
+      "checklist-sentiment-000058"
+    ],
+    "evidence_ids": [
+      "e0002",
+      "e0004"
+    ],
+    "hypothesis": "The candidate model shows degradation for very short input texts (single words) in sentiment classification, misclassifying positive and negative single-word examples.",
+    "missing_evidence": [
+      "More cases needed to confirm severity and prevalence outside the provided examples"
+    ]
+  },
+  "dataset_sha256": "fb9ff0c8aceae9a4c7eba5e63719256b714ced4698bbc48c208789e5ebdf5bbf",
+  "result": {
+    "finding_id": "f001",
+    "title": "Degradation on short single-word sentiment inputs",
+    "kind": "exploratory_regression",
+    "group_id": "prescribed_short-inputs",
+    "measured_observations": {
+      "group_id": "prescribed_short-inputs",
+      "cases": 82,
+      "baseline_accuracy": 0.8414634146341463,
+      "candidate_accuracy": 0.8170731707317073,
+      "accuracy_delta": -0.024390243902439025,
+      "correct_to_wrong": 2,
+      "wrong_to_correct": 0,
+      "both_wrong": 13,
+      "expected_label_counts": {
+        "negative": 35,
+        "neutral": 13,
+        "positive": 34
+      },
+      "status": "exploratory",
+      "confirmation": "No independent confirmation cohort was supplied",
+      "uncertainty_flags": [
+        "few discordant pairs",
+        "unmeasured template dependence; adaptive slice selection"
+      ],
+      "descriptive_bootstrap_95": [
+        -0.06097560975609756,
+        0.0
+      ],
+      "interval_interpretation": "Exact-text-group bootstrap only; not selection-adjusted, not a confirmatory interval"
+    },
+    "case_ids": [
+      "checklist-sentiment-000031",
+      "checklist-sentiment-000058"
+    ],
+    "evidence_ids": [
+      "e0002",
+      "e0004"
+    ],
+    "agent_hypothesis_not_verified_cause": "The candidate model shows degradation for very short input texts (single words) in sentiment classification, misclassifying positive and negative single-word examples.",
+    "missing_evidence": [
+      "More cases needed to confirm severity and prevalence outside the provided examples"
+    ],
+    "confirmation_status": "unconfirmed",
+    "business_severity": "not established"
+  }
+}
